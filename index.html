@@ -1,67 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
- <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viweport" content="with=device-with, initial-scale=1">
-    <title>Devjobs</title>
- </head>
+    <meta name="viewport" content="width=device-width, initial-scaler=1.0">
+    <title>DevJobs - Mural de Vagas de Ti</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
 <body>
- <header>
+<header class="header">
     <div class="container">
         <h1 class="logo">Dev<span>Jobs</span></h1>
-        <p class="tagline">Encontre sua proxima vaga de tecnologiaS</p>
+        <p class="tagline">Encontre sua próxima vaga em tecnologia</p>
     </div>
- </header>
+</header>
 
- <main class="main">
-    <section class="search-section-container">
-        <h2 class="sr-only">Lista de vagas</h2>
+<main class="main">
+    <section class="search-section container">
+        <label for="busca">Buscar vagas</label>
+        <input type="search" id="busca" placeholder="Ex: React, Node, Remoto ...">
+    </section>
+
+    <section class="job-section container">
+        <h2 class="sr-only">Lista de Vagas</h2>
         <div class="jobs-grid" id="jobs-grid">
-            <!- Primeiro Card->
+            <!-- deixe esse lugar para depois armazenar os cards de vagas-->
+            <!-- Card 1 de vaga-->
             <article class="job-card">
-                <div class="job-card_header">
-                    <span class="job-card_badge job-card_badge--remote">Remoto</span>
-                    <h3 class="job-card_title">Desenvolvedor(a) Frontend React</h3>
-                     <p class="job-card_company">TechCompany Simulada</p>
+                <div class="job-card__header">
+                    <span class="job-card__badge job-card__badge--remoto">Remoto</span>
+                    <h3 class="job-card__title">Desenvolvedor Frontend React</h3>
+                    <p class="job-card__company">Empresa Simulada</p>
                 </div>
-
-                <div class="job-card_body">
-                    <p class="job-card_tech">React - Typescript - CSS</p>
-                    <p class="job-card_salary">R$6.000 - R$9.000</p>
-                    <p class="job-card_Location">Remoto</p>
+                <div class="job-card__body">
+                    <p class="job-card__tech">React - TypeScript - CSS</p>
+                    <p class="job-card__salary">R$ 6.0000 - R$9.0000</p>
+                    <p class="job-card__location">Remoto - BR</p>
                 </div>
-                <div class="job-card_footer">
-                    <button class="button" class="btn btn--primary">Ver Detalhes</button>
-
+                <div class="job-card__footer">
+                    <button type="button" class="btn--primary">Ver detalhes</button>
+                    <br><br>
                 </div>
             </article>
-            <!- Segundo Card->
             <article class="job-card">
-                <div class="job-card_header">
-                    <span class="job-card_badge job-card_badge--remote">Remoto</span>
-                    <h3 class="job-card_title">Desenvolvedor(a) Backend</h3>
-                    <p class="job-card_company">Sankya</p>
+                <div class="job-card__header">
+                    <span class="job-card__badge job-card__badge--remoto">Remoto</span>
+                    <h3 class="job-card__title">Cientista de dados</h3>
+                    <p class="job-card__company">Empresa Simulada</p>
                 </div>
-                <div class="job-card_body">
-                    <p class="job-card_tech"> Java - pyton - c#</p>
-                    <p class="job-card_salary">R$7.000 - R$10.000</p>
-                    <p class="job-card_Location">Remoto</p>
+                <div class="job-card__body">
+                    <p class="job-card__tech">ML - NLP - Deep Learning</p>
+                    <p class="job-card__salary">R$ 10.0000 - R$12.0000</p>
+                    <p class="job-card__location">Remoto - BR</p>
                 </div>
-                <div class="job-card_footer">
-                    <button class=" button" class="btn--second">Ver Detalhes</button>
-
+                <div class="job-card__footer">
+                    <button type="button" class="btn--primary">Ver detalhes</button>
                 </div>
             </article>
-
+            <!--Coloque um novo card de vaga aqui-->
         </div>
     </section>
- </main>
+</main>
 
- <footer class="footer">
+<footer class="footer">
     <div class="container">
-         <p>&copy; 2026 Devjobs - Projeto disciplina programação Web Uniube</p>
+        <p>&copy; 2026 DevJos - Projeto Ling Prog Internet Uniube</p>
     </div>
- </footer>
-
+</footer>
 </body>
-</html>
